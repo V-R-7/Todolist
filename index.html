@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="Css/styles.css" rel="stylesheet" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Productivity Todo List</title>
+  </head>
+  <body>
+	<!--Entire Wrapper -->
+  	<div class="wrapper">
+	    <header>
+	    	<div class="page-wall">
+	    		<h1 class="title">To Do List</h1>
+          <p>Productivity List</p>
+        
+		<form id="add-list">
+			<input type="text" id="myInput" placeholder="Add Your Daily Goals ⛳...	" />
+			<button class="btn">Add &#128204;</button>
+        </form>
+	    </div>
+	    </header>
+	    <div id="todo-list">
+	    	<h2 class="title">Sharpen Your Productivity Time 👑</h2>
+	    	<ul>
+	    		<li class="checked">
+	    			<span class="name">Read Books 📚</span>
+	    			<span class="clear">clear<i class="fa fa-trash-o"></i></span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Buy vegetables 🍅</span>
+	    			<span class="clear">clear<i class="fa fa-trash-o"></i></span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Go to Gym 🏋️‍♂️</span>
+	    			<span class="clear">clear<i class="fa fa-trash-o" aria-hidden="true"></i></span>
+	    		</li>
+	    	</ul>
+	    </div>
+	</div>
+	<script src="js/app.js"></script>
+	<script src="js/localstorage.js"></script>
+  </body>
+</html>

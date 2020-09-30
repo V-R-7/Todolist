@@ -1,0 +1,171 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.page-wall{
+    background:rgba(124, 226, 184, 0.2);
+    padding: 10px 0;
+
+}
+
+#todo-list, #add-list{
+    margin: 30px;
+}
+
+#todo-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list ul li.checked {
+    background:#ffeaa7;
+    color: #000;
+    text-decoration: line-through;
+    border-color: #8ec6c5;
+    transition: all 0.3s linear;
+}
+
+#todo-list ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color:#000;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top:38px;
+    left:15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#todo-list li{
+    padding: 2.3rem;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+    position: relative;
+}
+
+#todo-list li:hover{
+    border-color: #8ec6c5;
+}
+
+.clear{
+    float: right;
+    background: #8ec6c5;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.clear:hover{
+    background: #333;
+}
+
+
+#add-list{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#add-list input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+}
+
+#add-list button{
+    border: 1px solid #8ec6c5;
+    background: #8ec6c5;
+    padding: 8.4px 20px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#add-list #hide{
+  width: 30px;
+}
+
+#add-list label{
+  line-height: 52px;
+}
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}
+.page-wall h1, .page-wall p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.page-wall input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
